@@ -1,0 +1,37 @@
+{
+    "name": "victorximenis/omnipay-mercadopago",
+    "type": "library",
+    "description": "MercadoPago gateway for OmniPay",
+    "keywords": [
+        "mercadopago",
+        "mp",
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment",
+        "PHPeste"
+    ],
+    "homepage": "https://github.com/victorximenis/omnipay-mercadopago",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Victor Ximenis",
+            "email": "victorximenis@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Omnipay\\MercadoPago\\" : "src/" }
+    },
+    "require": {
+        "omnipay/common": "~2.0"
+    },
+    "require-dev": {
+        "omnipay/tests": "~2.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0"
+        }
+    }
+}
