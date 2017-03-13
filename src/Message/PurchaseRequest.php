@@ -38,8 +38,22 @@ class PurchaseRequest extends AbstractRequest
 
         $items = $this->getItemData();
         $external_reference = parent::getData();
+         $purchaseObject = [
+            'items' => $items,
+            'external_reference' => $external_reference,
+            'auto_return'        => 'approved',
+            'back_urls'          => [
+                'success'        => $this->getReturnUrl()
+            ],
 
-        $purchaseObject = ['items' => $items, 'external_reference' => $external_reference];
+            //TODO add option for that
+            'payment_methods' => [
+                'excluded_payment_types' => [
+                    ["id" => "ticket"],
+                    ["id" => "atm"]
+                ]
+            ]
+        ];
         return $purchaseObject;
     }
 
