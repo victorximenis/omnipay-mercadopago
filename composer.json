@@ -22,8 +22,7 @@
         {
             "name": "Alberto Berroteran",
             "email": "alberroteran@gmail.com"
-        },
-
+        }
     ],
     "autoload": {
         "psr-4": { "Omnipay\\MercadoPago\\" : "src/" }
